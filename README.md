@@ -22,6 +22,12 @@ done < filename
 ```
 
 
+array
+```bash
+IFS=', ' read -a array <<< "word1, word2"
+echo ${array[0]} #word1
+```
+
 variable
 ```bash
 # exists
