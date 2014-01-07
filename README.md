@@ -33,6 +33,13 @@ Unix[0]='Debian'
 Unix[1]='Red hat'
 Unix[2]='Ubuntu'
 Unix[3]='Suse'
+
+#traverse
+declare -a names=(a b c)
+for name in ${names[@]};do
+    echo $name
+done
+
 ```
 
 
