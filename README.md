@@ -26,7 +26,15 @@ array
 ```bash
 IFS=', ' read -a array <<< "word1, word2"
 echo ${array[0]} #word1
+#declare a array
+declare -a arrayname=(element1 element2 element3)
+#or like js
+Unix[0]='Debian'
+Unix[1]='Red hat'
+Unix[2]='Ubuntu'
+Unix[3]='Suse'
 ```
+
 
 variable
 ```bash
