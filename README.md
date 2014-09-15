@@ -11,6 +11,12 @@ substring
 ${string:0:1}
 ```
 
+read input
+```bash
+read VARNAME
+echo $VARNAME
+```
+
 read file
 ```bash
 # line by line
@@ -21,6 +27,21 @@ do
 done < filename
 ```
 
+read password
+```bash
+# turn off user input echoing
+stty -echo
+read PASSWORD
+# $PASSWORD contains the password
+# turn on user input echoing
+stty echo
+
+# or in bash simply
+# -p for prompt -s for save (I guess)
+read -s PASSWORD -p "Put your password:"
+$echo $PASSWORD
+
+```
 
 array
 ```bash
