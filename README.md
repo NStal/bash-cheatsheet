@@ -63,6 +63,13 @@ done
 
 ```
 
+loops
+```bash
+for i in seq 10 25; do
+    echo heh index: $i
+done
+
+```
 
 variable
 ```bash
