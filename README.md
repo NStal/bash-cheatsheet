@@ -70,6 +70,16 @@ for i in seq 10 25; do
 done
 
 ```
+```bash
+#for item
+for item in ${array[@]}; do
+    echo ${item} or $item
+done
+#for index
+for idx in ${!array[@]}; do
+   ehco $idx ${array[idx]}
+done
+```
 
 variable
 ```bash
