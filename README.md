@@ -3,9 +3,6 @@ bash-cheatsheet
 
 My bash cheatsheet
 
-
-# String Processing
-
 substring
 ```bash
 ${string:0:1}
@@ -56,9 +53,15 @@ Unix[2]='Ubuntu'
 Unix[3]='Suse'
 
 #traverse
+#for item
 declare -a names=(a b c)
 for name in ${names[@]};do
     echo $name
+done
+
+#for index
+for idx in ${!array[@]}; do
+   ehco $idx ${array[idx]}
 done
 
 ```
@@ -70,21 +73,13 @@ for i in seq 10 25; do
 done
 
 ```
-```bash
-#for item
-for item in ${array[@]}; do
-    echo ${item} or $item
-done
-#for index
-for idx in ${!array[@]}; do
-   ehco $idx ${array[idx]}
-done
-```
 
 variable
 ```bash
 # exists
 [ -z $varname ]  
+# to use a variable globally
+export globalVar="value"
 ```
 
 get script path
