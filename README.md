@@ -81,6 +81,15 @@ variable
 # to use a variable globally
 export globalVar="value"
 ```
+conditions
+```bash
+#check if contains
+string='My long string';
+if [[ $string == *"My long"* ]]
+then
+  echo "It's there!";
+fi
+```
 
 get script path
 via http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
