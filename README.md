@@ -95,5 +95,16 @@ get script path
 via http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 ```bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#another method (works when using symbolic link to)
+DIR=$(dirname $(readlink -f $0))
+```
+
+catch Ctrl_c signal
+```bash
+#function name can be something else
+ctrl_c(){
+	echo 'aborted by Ctrl_c'
+}
+trap ctrl_c INT
 ```
 
